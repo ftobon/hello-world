@@ -1,0 +1,14 @@
+#include <Adafruit_CircuitPlayground.h> //circuit playground library
+
+void setup() {
+ CircuitPlayground.begin();  //initialize circuit playground
+}
+
+void loop() {
+  CircuitPlayground.clearPixels(); //turns all LED's off
+  
+  delay(500);
+  CircuitPlayground.setPixelColor(0, 255, 0, 0);
+  delay(500);
+
+}
