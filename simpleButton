@@ -1,0 +1,28 @@
+#include <Adafruit_CircuitPlayground.h>
+bool leftButtonPressed;
+bool rightButtonPressed;
+
+void setup() {
+  CircuitPlayground.begin();
+}
+
+void loop() {
+  leftButtonPressed = CircuitPlayground.leftButton();
+  rightButtonPressed = CircuitPlayground.rightButton();
+  CircuitPlayground.clearPixels();
+
+
+ //Any events you add inside the brackets
+ //will happen when you press the left button
+ 
+  if (leftButtonPressed) {
+    
+        CircuitPlayground.setPixelColor(0, 255,   0,   0);
+
+       //Try Adding your own events below:
+       
+    
+    }
+
+ 
+}
